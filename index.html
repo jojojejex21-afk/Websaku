@@ -2,510 +2,225 @@
 <html lang="id">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>WebSaku — Jasa Pembuatan Website Profesional, Harga Bersahabat</title>
-<meta name="description" content="WebSaku adalah jasa pembuatan website untuk UMKM, bisnis, landing page, portfolio, dan berbagai kebutuhan lainnya. Website modern, cepat, dan responsif mulai dari Rp100.000.">
-<link rel="canonical" href="https://www.websaku.example/">
-<meta name="google-site-verification" content="nG_mEjtrr317WqHMPtdK8_m1VteYOIDhbUbHbO4fCno" />
-
-<!-- Open Graph -->
-<meta property="og:title" content="WebSaku — Jasa Pembuatan Website Profesional, Harga Bersahabat">
-<meta property="og:description" content="Website modern, cepat, dan responsif untuk UMKM, bisnis, dan personal. Mulai dari Rp100.000.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kedai Rasa Ibu — Masakan Rumahan Penuh Rasa</title>
+<meta name="description" content="Kedai Rasa Ibu menyajikan masakan rumahan sederhana dan hangat: nasi ayam goreng, pecel, soto, dan lainnya. Demo website UMKM kuliner oleh WebSaku.">
+<meta property="og:title" content="Kedai Rasa Ibu — Masakan Rumahan Penuh Rasa">
+<meta property="og:description" content="Masakan rumahan dari bahan pilihan, dibuat setiap hari. Demo website oleh WebSaku.">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://www.websaku.example/">
-
-<!-- Favicon placeholder -->
 <link rel="icon" href="data:,">
-
-<!-- Font -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
-
-<!-- Schema.org: LocalBusiness (data generik, silakan sesuaikan) -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "ProfessionalService",
-  "name": "WebSaku",
-  "description": "Jasa pembuatan website profesional untuk UMKM, bisnis, landing page, dan portfolio.",
-  "priceRange": "Rp100.000 - Rp500.000+"
-}
-</script>
 </head>
 <body>
 
-<a class="skip-link" href="#main">Lompat ke konten utama</a>
+<!--
+  CARA GANTI GAMBAR: setiap gambar memakai kotak <figure class="ph">.
+  Ganti file di folder images/ dengan foto asli menggunakan nama file yang sama,
+  atau ubah atribut src pada tag <img> di bawah ini ke nama file barumu.
+-->
 
-<!-- === NAVBAR === -->
+<!-- NAVBAR -->
 <header class="navbar" id="navbar">
   <div class="container navbar__inner">
-    <a href="#beranda" class="navbar__logo">WebSaku</a>
-
-    <nav class="navbar__menu" id="navbarMenu" aria-label="Menu utama">
-      <a href="#beranda" class="navbar__link">Beranda</a>
-      <a href="#layanan" class="navbar__link">Layanan</a>
-      <a href="#portfolio" class="navbar__link">Portfolio</a>
-      <a href="#harga" class="navbar__link">Harga</a>
-      <a href="#faq" class="navbar__link">FAQ</a>
-      <a href="#kontak" class="navbar__link">Kontak</a>
-      <a href="#kontak" class="btn btn--primary navbar__cta">Konsultasi Gratis</a>
+    <a href="#beranda" class="logo">Kedai Rasa Ibu</a>
+    <nav class="menu" id="menu" aria-label="Menu utama">
+      <a href="#beranda">Beranda</a>
+      <a href="#tentang">Tentang</a>
+      <a href="#menu-andalan">Menu</a>
+      <a href="#galeri">Galeri</a>
+      <a href="#lokasi">Lokasi</a>
+      <a href="#hubungi">Hubungi</a>
+      <a href="https://wa.me/6281234567890?text=Halo%20Kedai%20Rasa%20Ibu%2C%20saya%20ingin%20memesan%20makanan." class="btn btn--primary menu__cta" target="_blank" rel="noopener">Pesan Sekarang</a>
     </nav>
-
-    <button class="navbar__toggle" id="navbarToggle" aria-label="Buka menu navigasi" aria-expanded="false" aria-controls="navbarMenu">
-      <span class="navbar__toggle-bar"></span>
-      <span class="navbar__toggle-bar"></span>
-      <span class="navbar__toggle-bar"></span>
+    <button class="burger" id="burger" aria-label="Buka menu" aria-expanded="false" aria-controls="menu">
+      <span></span><span></span><span></span>
     </button>
   </div>
 </header>
 
-<main id="main">
+<main>
 
-  <!-- === HERO === -->
-  <section class="hero" id="beranda">
-    <div class="container hero__inner">
-      <div class="hero__content reveal">
-        <span class="hero__badge">Jasa Website Profesional</span>
-        <h1 class="hero__title">Website Profesional, Harga Bersahabat.</h1>
-        <p class="hero__desc">WebSaku membantu bisnis, UMKM, personal, dan berbagai kebutuhan lainnya memiliki website modern, cepat, dan responsif tanpa harus mengeluarkan biaya besar.</p>
-        <p class="hero__price">Mulai <strong>Rp100.000</strong></p>
-        <div class="hero__actions">
-          <a href="#kontak" class="btn btn--primary">Konsultasi Gratis</a>
-          <a href="#portfolio" class="btn btn--secondary">Lihat Portfolio</a>
-        </div>
-      </div>
-
-      <div class="hero__visual reveal" aria-hidden="true">
-        <div class="mockup">
-          <div class="mockup__bar">
-            <span class="mockup__dot"></span>
-            <span class="mockup__dot"></span>
-            <span class="mockup__dot"></span>
-            <div class="mockup__url">websaku.id</div>
-          </div>
-          <div class="mockup__body">
-            <div class="mockup__nav">
-              <span class="mockup__logo"></span>
-              <span class="mockup__navline"></span>
-              <span class="mockup__navline"></span>
-              <span class="mockup__navbtn"></span>
-            </div>
-            <div class="mockup__hero">
-              <span class="mockup__line mockup__line--lg"></span>
-              <span class="mockup__line mockup__line--md"></span>
-              <span class="mockup__line mockup__line--sm"></span>
-              <span class="mockup__button"></span>
-            </div>
-            <div class="mockup__grid">
-              <span class="mockup__card"></span>
-              <span class="mockup__card"></span>
-              <span class="mockup__card"></span>
-            </div>
-          </div>
-        </div>
+<!-- HERO -->
+<section class="hero" id="beranda">
+  <div class="container hero__inner">
+    <div class="hero__text reveal">
+      <span class="badge">Masakan Rumahan • Dibuat Setiap Hari</span>
+      <h1>Masakan Rumahan<br><em>Penuh Rasa</em></h1>
+      <p>Setiap hidangan kami dibuat dengan bahan pilihan dan resep rumahan yang menghadirkan rasa sederhana, hangat, dan familiar.</p>
+      <div class="actions">
+        <a href="https://wa.me/6281234567890?text=Halo%20Kedai%20Rasa%20Ibu%2C%20saya%20ingin%20memesan%20makanan." class="btn btn--primary" target="_blank" rel="noopener">Pesan via WhatsApp</a>
+        <a href="#menu-andalan" class="btn btn--ghost">Lihat Menu</a>
       </div>
     </div>
-  </section>
+    <!-- GANTI GAMBAR HERO DI SINI -->
+    <figure class="ph ph--hero reveal">
+      <img src="images/hero.jpg" alt="Masakan rumahan Kedai Rasa Ibu">
+    </figure>
+  </div>
+</section>
 
-  <!-- === SERVICES === -->
-  <section class="section" id="layanan">
-    <div class="container">
-      <div class="section-title">
-        <h2>Layanan Kami</h2>
-        <p>Berbagai jenis website yang bisa kami kerjakan sesuai kebutuhanmu.</p>
-      </div>
-
-      <div class="services-grid">
-        <div class="service-card reveal">
-          <div class="service-card__icon" aria-hidden="true">🏪</div>
-          <h3>Website UMKM</h3>
-          <p>Tampilkan produk dan usahamu secara online dengan tampilan yang rapi.</p>
-        </div>
-        <div class="service-card reveal">
-          <div class="service-card__icon" aria-hidden="true">💼</div>
-          <h3>Website Bisnis</h3>
-          <p>Profil perusahaan yang meyakinkan untuk membangun kepercayaan klien.</p>
-        </div>
-        <div class="service-card reveal">
-          <div class="service-card__icon" aria-hidden="true">🚀</div>
-          <h3>Landing Page</h3>
-          <p>Halaman fokus untuk promosi produk, event, atau kampanye tertentu.</p>
-        </div>
-        <div class="service-card reveal">
-          <div class="service-card__icon" aria-hidden="true">🧑‍💻</div>
-          <h3>Portfolio & CV</h3>
-          <p>Tunjukkan karya dan pengalamanmu ke calon klien atau perekrut.</p>
-        </div>
-        <div class="service-card reveal">
-          <div class="service-card__icon" aria-hidden="true">🍽️</div>
-          <h3>Website Restoran</h3>
-          <p>Menu, lokasi, dan info restoran dalam satu halaman yang menarik.</p>
-        </div>
-        <div class="service-card reveal">
-          <div class="service-card__icon" aria-hidden="true">👤</div>
-          <h3>Website Personal</h3>
-          <p>Website pribadi untuk memperkenalkan diri atau membangun personal brand.</p>
-        </div>
-        <div class="service-card reveal">
-          <div class="service-card__icon" aria-hidden="true">🏢</div>
-          <h3>Website Organisasi</h3>
-          <p>Informasi kegiatan dan profil untuk komunitas, sekolah, atau lembaga.</p>
-        </div>
-        <div class="service-card reveal">
-          <div class="service-card__icon" aria-hidden="true">⚙️</div>
-          <h3>Custom Web App</h3>
-          <p>Kebutuhan fitur khusus? Kami bantu wujudkan sesuai spesifikasimu.</p>
-        </div>
-      </div>
+<!-- ABOUT -->
+<section class="section" id="tentang">
+  <div class="container about">
+    <!-- GANTI GAMBAR TENTANG DI SINI -->
+    <figure class="ph ph--about reveal">
+      <img src="images/about.jpg" alt="Suasana memasak di Kedai Rasa Ibu" loading="lazy">
+    </figure>
+    <div class="reveal">
+      <h2>Rasa Rumahan yang Selalu Dirindukan</h2>
+      <p class="lead">Kedai Rasa Ibu hadir untuk menyajikan masakan rumahan yang sederhana, lezat, dan dibuat dengan perhatian seperti hidangan dari dapur sendiri.</p>
+      <ul class="points">
+        <li>Bahan Pilihan</li>
+        <li>Resep Rumahan</li>
+        <li>Dibuat Setiap Hari</li>
+      </ul>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- === PORTFOLIO === -->
-  <section class="section section--surface" id="portfolio">
-    <div class="container">
-      <div class="section-title">
-        <h2>Portfolio / Demo</h2>
-        <p>Contoh tampilan website yang bisa kami kerjakan. Semua di bawah ini adalah demo, bukan project klien.</p>
-      </div>
-
-      <div class="portfolio-grid">
-        <article class="portfolio-card reveal">
-          <div class="portfolio-card__preview portfolio-card__preview--1" aria-hidden="true">
-            <span class="portfolio-card__badge">Demo Website</span>
-          </div>
-          <div class="portfolio-card__body">
-            <span class="portfolio-card__category">UMKM</span>
-            <h3>Demo Toko Kelontong Digital</h3>
-            <a href="#" class="portfolio-card__link">Lihat Demo</a>
-          </div>
-        </article>
-
-        <article class="portfolio-card reveal">
-          <div class="portfolio-card__preview portfolio-card__preview--2" aria-hidden="true">
-            <span class="portfolio-card__badge">Demo Website</span>
-          </div>
-          <div class="portfolio-card__body">
-            <span class="portfolio-card__category">Restoran</span>
-            <h3>Demo Menu Restoran</h3>
-            <a href="#" class="portfolio-card__link">Lihat Demo</a>
-          </div>
-        </article>
-
-        <article class="portfolio-card reveal">
-          <div class="portfolio-card__preview portfolio-card__preview--3" aria-hidden="true">
-            <span class="portfolio-card__badge">Demo Website</span>
-          </div>
-          <div class="portfolio-card__body">
-            <span class="portfolio-card__category">Portfolio</span>
-            <h3>Demo Portfolio Personal</h3>
-            <a href="#" class="portfolio-card__link">Lihat Demo</a>
-          </div>
-        </article>
-
-        <article class="portfolio-card reveal">
-          <div class="portfolio-card__preview portfolio-card__preview--4" aria-hidden="true">
-            <span class="portfolio-card__badge">Demo Website</span>
-          </div>
-          <div class="portfolio-card__body">
-            <span class="portfolio-card__category">Landing Page</span>
-            <h3>Demo Landing Page Produk</h3>
-            <a href="#" class="portfolio-card__link">Lihat Demo</a>
-          </div>
-        </article>
-      </div>
+<!-- MENU -->
+<section class="section section--alt" id="menu-andalan">
+  <div class="container">
+    <div class="head reveal">
+      <h2>Menu Andalan</h2>
+      <p>Pilihan sederhana yang selalu jadi favorit.</p>
     </div>
-  </section>
-
-  <!-- === PRICING === -->
-  <section class="section" id="harga">
-    <div class="container">
-      <div class="section-title">
-        <h2>Paket Harga</h2>
-        <p>Pilih paket sesuai kebutuhan. Bisa didiskusikan lebih lanjut saat konsultasi.</p>
-      </div>
-
-      <div class="pricing-grid">
-        <div class="pricing-card reveal">
-          <h3 class="pricing-card__name">Basic</h3>
-          <p class="pricing-card__price">Rp100.000</p>
-          <p class="pricing-card__desc">Untuk kebutuhan website sederhana.</p>
-          <ul class="pricing-card__features">
-            <li>1 halaman website</li>
-            <li>Desain responsif</li>
-            <li>Cocok untuk profil singkat</li>
-          </ul>
-          <a href="#kontak" class="btn btn--secondary pricing-card__cta">Tanya Paket</a>
-        </div>
-
-        <div class="pricing-card pricing-card--highlight reveal">
-          <h3 class="pricing-card__name">Business</h3>
-          <p class="pricing-card__price">Rp300.000</p>
-          <p class="pricing-card__desc">Untuk bisnis yang membutuhkan website lebih lengkap.</p>
-          <ul class="pricing-card__features">
-            <li>Beberapa halaman</li>
-            <li>Desain lebih lengkap</li>
-            <li>Konsultasi struktur konten</li>
-          </ul>
-          <a href="#kontak" class="btn btn--primary pricing-card__cta">Tanya Paket</a>
-        </div>
-
-        <div class="pricing-card reveal">
-          <h3 class="pricing-card__name">Custom</h3>
-          <p class="pricing-card__price">Mulai Rp500.000</p>
-          <p class="pricing-card__desc">Untuk kebutuhan khusus dan fitur custom.</p>
-          <ul class="pricing-card__features">
-            <li>Fitur sesuai kebutuhan</li>
-            <li>Web app custom</li>
-            <li>Diskusi teknis mendalam</li>
-          </ul>
-          <a href="#kontak" class="btn btn--secondary pricing-card__cta">Tanya Paket</a>
-        </div>
-      </div>
-
-      <p class="pricing-note">Domain, hosting berbayar, dan fitur tambahan dapat memiliki biaya terpisah.</p>
+    <div class="grid grid--menu">
+      <!-- GANTI GAMBAR MENU 1 DI SINI -->
+      <article class="card reveal"><figure class="ph ph--card">
+        <img src="images/nasi-ayam-goreng.jpg" alt="Nasi Ayam Goreng Kedai Rasa Ibu" loading="lazy">
+      </figure>
+        <div class="card__body"><h3>Nasi Ayam Goreng</h3><p>Ayam goreng crispy dengan nasi hangat, lalapan dan sambal.</p><strong>Rp15.000</strong></div></article>
+      <!-- GANTI GAMBAR MENU 2 DI SINI -->
+      <article class="card reveal"><figure class="ph ph--card">
+        <img src="images/nasi-pecel.jpg" alt="Nasi Pecel Kedai Rasa Ibu" loading="lazy">
+      </figure>
+        <div class="card__body"><h3>Nasi Pecel</h3><p>Sayuran segar dengan bumbu kacang khas rumahan.</p><strong>Rp12.000</strong></div></article>
+      <!-- GANTI GAMBAR MENU 3 DI SINI -->
+      <article class="card reveal"><figure class="ph ph--card">
+        <img src="images/mie-goreng-spesial.jpg" alt="Mie Goreng Spesial Kedai Rasa Ibu" loading="lazy">
+      </figure>
+        <div class="card__body"><h3>Mie Goreng Spesial</h3><p>Mie goreng dengan telur, ayam dan sayuran pilihan.</p><strong>Rp12.000</strong></div></article>
+      <!-- GANTI GAMBAR MENU 4 DI SINI -->
+      <article class="card reveal"><figure class="ph ph--card">
+        <img src="images/soto-ayam.jpg" alt="Soto Ayam Kedai Rasa Ibu" loading="lazy">
+      </figure>
+        <div class="card__body"><h3>Soto Ayam</h3><p>Kuah gurih dengan ayam suwir, telur dan pelengkap.</p><strong>Rp12.000</strong></div></article>
+      <!-- GANTI GAMBAR MENU 5 DI SINI -->
+      <article class="card reveal"><figure class="ph ph--card">
+        <img src="images/ayam-bakar.jpg" alt="Ayam Bakar Kedai Rasa Ibu" loading="lazy">
+      </figure>
+        <div class="card__body"><h3>Ayam Bakar</h3><p>Ayam bakar dengan bumbu khas dan sambal terasi.</p><strong>Rp17.000</strong></div></article>
+      <!-- GANTI GAMBAR MENU 6 DI SINI -->
+      <article class="card reveal"><figure class="ph ph--card">
+        <img src="images/es-teh-manis.jpg" alt="Es Teh Manis Kedai Rasa Ibu" loading="lazy">
+      </figure>
+        <div class="card__body"><h3>Es Teh Manis</h3><p>Segar dan menyegarkan untuk menemani makan.</p><strong>Rp3.000</strong></div></article>
     </div>
-  </section>
-
-  <!-- === WHY WEBSAKU === -->
-  <section class="section section--surface" id="kenapa">
-    <div class="container">
-      <div class="section-title">
-        <h2>Kenapa WebSaku</h2>
-        <p>Beberapa alasan memilih WebSaku untuk website-mu.</p>
-      </div>
-
-      <div class="why-grid">
-        <div class="why-item reveal">
-          <span class="why-item__check" aria-hidden="true">✓</span>
-          <span>Harga transparan</span>
-        </div>
-        <div class="why-item reveal">
-          <span class="why-item__check" aria-hidden="true">✓</span>
-          <span>Desain modern</span>
-        </div>
-        <div class="why-item reveal">
-          <span class="why-item__check" aria-hidden="true">✓</span>
-          <span>Mobile friendly</span>
-        </div>
-        <div class="why-item reveal">
-          <span class="why-item__check" aria-hidden="true">✓</span>
-          <span>Website ringan</span>
-        </div>
-        <div class="why-item reveal">
-          <span class="why-item__check" aria-hidden="true">✓</span>
-          <span>Bisa disesuaikan</span>
-        </div>
-        <div class="why-item reveal">
-          <span class="why-item__check" aria-hidden="true">✓</span>
-          <span>Cocok untuk berbagai kebutuhan</span>
-        </div>
-        <div class="why-item reveal">
-          <span class="why-item__check" aria-hidden="true">✓</span>
-          <span>Konsultasi sebelum pengerjaan</span>
-        </div>
-        <div class="why-item reveal">
-          <span class="why-item__check" aria-hidden="true">✓</span>
-          <span>Dukungan setelah website selesai</span>
-        </div>
-      </div>
+    <div class="center">
+      <a href="https://wa.me/6281234567890?text=Halo%20Kedai%20Rasa%20Ibu%2C%20boleh%20minta%20daftar%20menu%20lengkap%3F" class="btn btn--ghost" target="_blank" rel="noopener">Lihat Semua Menu</a>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- === PROCESS === -->
-  <section class="section" id="cara-kerja">
-    <div class="container">
-      <div class="section-title">
-        <h2>Cara Kerja</h2>
-        <p>Proses sederhana dari konsultasi sampai website online.</p>
-      </div>
-
-      <div class="process-grid">
-        <div class="process-step reveal">
-          <span class="process-step__number">01</span>
-          <h3>Konsultasi</h3>
-          <p>Ceritakan kebutuhan website-mu ke kami.</p>
-        </div>
-        <div class="process-step reveal">
-          <span class="process-step__number">02</span>
-          <h3>Pilih Paket</h3>
-          <p>Sesuaikan paket dengan kebutuhan dan anggaran.</p>
-        </div>
-        <div class="process-step reveal">
-          <span class="process-step__number">03</span>
-          <h3>Tentukan Konsep</h3>
-          <p>Diskusikan gaya, warna, dan struktur konten.</p>
-        </div>
-        <div class="process-step reveal">
-          <span class="process-step__number">04</span>
-          <h3>Website Dikerjakan</h3>
-          <p>Tim kami membangun website sesuai konsep.</p>
-        </div>
-        <div class="process-step reveal">
-          <span class="process-step__number">05</span>
-          <h3>Review</h3>
-          <p>Kamu cek hasilnya dan beri masukan.</p>
-        </div>
-        <div class="process-step reveal">
-          <span class="process-step__number">06</span>
-          <h3>Website Online</h3>
-          <p>Website siap digunakan dan diakses publik.</p>
-        </div>
-      </div>
+<!-- FEATURES -->
+<section class="section">
+  <div class="container">
+    <div class="head reveal"><h2>Kenapa Harus Kedai Rasa Ibu?</h2></div>
+    <div class="grid grid--features">
+      <div class="feature reveal">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 21c0-9 5-15 15-16-1 10-7 15-15 16zM5 21c2-5 5-8 9-10"/></svg>
+        <h3>Bahan Pilihan</h3><p>Kami menggunakan bahan segar dan berkualitas.</p></div>
+      <div class="feature reveal">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-8-5-8-11a4.5 4.5 0 0 1 8-2.8A4.5 4.5 0 0 1 20 10c0 6-8 11-8 11z"/></svg>
+        <h3>Rasa Autentik</h3><p>Resep rumahan dengan cita rasa yang familiar.</p></div>
+      <div class="feature reveal">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M9 9.5c0-1 1-2 3-2s3 1 3 2-1 1.6-3 2-3 1-3 2 1 2 3 2 3-1 3-2M12 6v1.5M12 16.5V18"/></svg>
+        <h3>Harga Terjangkau</h3><p>Nikmati hidangan lezat dengan harga bersahabat.</p></div>
+      <div class="feature reveal">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8 14c1 2 2.5 3 4 3s3-1 4-3M9 9.5v.5M15 9.5v.5"/></svg>
+        <h3>Pelayanan Ramah</h3><p>Kepuasan pelanggan menjadi perhatian kami.</p></div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- === FAQ === -->
-  <section class="section section--surface" id="faq">
-    <div class="container container--narrow">
-      <div class="section-title">
-        <h2>Pertanyaan Umum</h2>
-        <p>Beberapa hal yang sering ditanyakan sebelum memesan.</p>
-      </div>
-
-      <div class="faq-list">
-        <div class="faq-item">
-          <h3>
-            <button class="faq-item__question" aria-expanded="false">
-              Apakah WebSaku bisa membuat website untuk UMKM?
-              <span class="faq-item__icon" aria-hidden="true">+</span>
-            </button>
-          </h3>
-          <div class="faq-item__answer">
-            <p>Bisa. Website UMKM adalah salah satu layanan utama kami, mulai dari profil usaha hingga katalog produk sederhana.</p>
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <h3>
-            <button class="faq-item__question" aria-expanded="false">
-              Apakah website bisa dibuka lewat HP?
-              <span class="faq-item__icon" aria-hidden="true">+</span>
-            </button>
-          </h3>
-          <div class="faq-item__answer">
-            <p>Bisa. Semua website yang kami buat didesain responsif, jadi tetap rapi saat dibuka di HP, tablet, maupun laptop.</p>
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <h3>
-            <button class="faq-item__question" aria-expanded="false">
-              Apakah bisa menggunakan domain sendiri?
-              <span class="faq-item__icon" aria-hidden="true">+</span>
-            </button>
-          </h3>
-          <div class="faq-item__answer">
-            <p>Bisa. Kamu bisa menggunakan domain yang sudah kamu miliki, atau kami bantu arahkan proses pembeliannya. Domain custom dapat memiliki biaya terpisah.</p>
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <h3>
-            <button class="faq-item__question" aria-expanded="false">
-              Berapa lama pengerjaannya?
-              <span class="faq-item__icon" aria-hidden="true">+</span>
-            </button>
-          </h3>
-          <div class="faq-item__answer">
-            <p>Lama pengerjaan tergantung paket dan kompleksitas kebutuhan. Estimasi waktu akan diinformasikan saat konsultasi.</p>
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <h3>
-            <button class="faq-item__question" aria-expanded="false">
-              Apakah bisa request desain?
-              <span class="faq-item__icon" aria-hidden="true">+</span>
-            </button>
-          </h3>
-          <div class="faq-item__answer">
-            <p>Bisa. Kami akan mendiskusikan gaya, warna, dan referensi desain yang kamu inginkan sebelum pengerjaan dimulai.</p>
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <h3>
-            <button class="faq-item__question" aria-expanded="false">
-              Apakah WebSaku bisa membuat web app custom?
-              <span class="faq-item__icon" aria-hidden="true">+</span>
-            </button>
-          </h3>
-          <div class="faq-item__answer">
-            <p>Bisa, tergantung kompleksitas fitur yang dibutuhkan. Kebutuhan ini masuk ke paket Custom dan akan dibahas lebih detail saat konsultasi.</p>
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <h3>
-            <button class="faq-item__question" aria-expanded="false">
-              Apakah hosting termasuk harga?
-              <span class="faq-item__icon" aria-hidden="true">+</span>
-            </button>
-          </h3>
-          <div class="faq-item__answer">
-            <p>Tidak selalu. Beberapa layanan hosting dapat memiliki biaya terpisah tergantung paket dan kebutuhan. Detailnya akan dijelaskan saat konsultasi.</p>
-          </div>
-        </div>
-      </div>
+<!-- GALLERY -->
+<section class="section section--alt" id="galeri">
+  <div class="container">
+    <div class="head reveal"><h2>Suasana &amp; Hidangan</h2></div>
+    <div class="gallery">
+      <!-- GANTI GAMBAR GALERI 1 DI SINI -->
+      <figure class="ph ph--gal reveal">
+        <img src="images/gallery-1.jpg" alt="Hidangan Kedai Rasa Ibu" loading="lazy">
+      </figure>
+      <!-- GANTI GAMBAR GALERI 2 DI SINI -->
+      <figure class="ph ph--gal reveal">
+        <img src="images/gallery-2.jpg" alt="Suasana Kedai Rasa Ibu" loading="lazy">
+      </figure>
+      <!-- GANTI GAMBAR GALERI 3 DI SINI -->
+      <figure class="ph ph--gal reveal">
+        <img src="images/gallery-3.jpg" alt="Menu rumahan Kedai Rasa Ibu" loading="lazy">
+      </figure>
+      <!-- GANTI GAMBAR GALERI 4 DI SINI -->
+      <figure class="ph ph--gal reveal">
+        <img src="images/gallery-4.jpg" alt="Bahan masakan Kedai Rasa Ibu" loading="lazy">
+      </figure>
+      <!-- GANTI GAMBAR GALERI 5 DI SINI -->
+      <figure class="ph ph--gal reveal">
+        <img src="images/gallery-5.jpg" alt="Minuman Kedai Rasa Ibu" loading="lazy">
+      </figure>
+      <!-- GANTI GAMBAR GALERI 6 DI SINI -->
+      <figure class="ph ph--gal reveal">
+        <img src="images/gallery-6.jpg" alt="Hidangan siap disajikan" loading="lazy">
+      </figure>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- === CTA === -->
-  <section class="cta" id="kontak">
-    <div class="container cta__inner reveal">
-      <h2>Punya ide website? Mari wujudkan bersama WebSaku.</h2>
-      <p>Ceritakan kebutuhanmu. Kami bantu menentukan jenis website dan paket yang sesuai.</p>
-      <a href="https://wa.me/628XXXXXXXXXX" class="btn btn--primary btn--lg" target="_blank" rel="noopener">Konsultasi via WhatsApp</a>
+<!-- LOCATION -->
+<section class="section" id="lokasi">
+  <div class="container location">
+    <div class="reveal">
+      <h2>Datang dan Nikmati Langsung</h2>
+      <p class="lead"><strong>Alamat</strong><br>Jl. Melati No. 12, Desa Sukamaju, Kec. Karangrejo, Kab. Semarang, Jawa Tengah 50229</p>
+      <p class="lead"><strong>Jam Buka</strong><br>Setiap Hari<br>06.00 – 21.00 WIB</p>
     </div>
-  </section>
+    <!-- GANTI PETA DI SINI (mis. embed peta atau gambar) -->
+    <div class="map reveal" role="img" aria-label="Peta lokasi Kedai Rasa Ibu (placeholder)">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg>
+      <span>Kedai Rasa Ibu</span>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta" id="hubungi">
+  <div class="container reveal">
+    <h2>Sudah Tahu Mau Makan Apa?</h2>
+    <p>Pesan sekarang dan nikmati masakan rumahan favoritmu.</p>
+    <a href="https://wa.me/6281234567890?text=Halo%20Kedai%20Rasa%20Ibu%2C%20saya%20ingin%20memesan%20makanan." class="btn btn--light" target="_blank" rel="noopener">Chat WhatsApp</a>
+  </div>
+</section>
 
 </main>
 
-<!-- === FOOTER === -->
+<!-- FOOTER -->
 <footer class="footer">
   <div class="container footer__inner">
-    <div class="footer__brand">
-      <p class="footer__logo">WebSaku</p>
-      <p class="footer__tagline">Website Profesional, Harga Bersahabat.</p>
+    <div>
+      <p class="logo logo--light">Kedai Rasa Ibu</p>
+      <p>Masakan Rumahan Penuh Rasa</p>
     </div>
-
-    <div class="footer__col">
-      <h3>Layanan</h3>
-      <a href="#layanan">Website UMKM</a>
-      <a href="#layanan">Website Bisnis</a>
-      <a href="#layanan">Landing Page</a>
-      <a href="#layanan">Custom Web App</a>
-    </div>
-
-    <div class="footer__col">
-      <h3>Navigasi</h3>
-      <a href="#beranda">Beranda</a>
-      <a href="#portfolio">Portfolio</a>
-      <a href="#harga">Harga</a>
-      <a href="#faq">FAQ</a>
-    </div>
-
-    <div class="footer__col">
-      <h3>Kontak</h3>
-      <a href="https://wa.me/628XXXXXXXXXX" target="_blank" rel="noopener">WhatsApp: 628XXXXXXXXXX</a>
-    </div>
+    <nav class="footer__nav" aria-label="Menu footer">
+      <a href="#beranda">Beranda</a><a href="#tentang">Tentang</a><a href="#menu-andalan">Menu</a>
+      <a href="#galeri">Galeri</a><a href="#lokasi">Lokasi</a><a href="#hubungi">Hubungi</a>
+    </nav>
   </div>
-
-  <div class="container footer__bottom">
-    <p>© 2026 WebSaku. All rights reserved.</p>
-  </div>
+  <p class="footer__copy">© 2026 Kedai Rasa Ibu. Demo website oleh WebSaku.</p>
 </footer>
-
-<!-- === FLOATING WHATSAPP BUTTON === -->
-<a href="https://wa.me/628XXXXXXXXXX" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Konsultasi via WhatsApp">
-  <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor" aria-hidden="true">
-    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.472-.148-.67.15-.198.297-.767.966-.94 1.164-.173.198-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.372-.025-.521-.075-.148-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
-    <path d="M12.004 2.003c-5.514 0-9.997 4.483-9.997 9.997 0 1.763.462 3.486 1.34 5.003l-1.421 5.19 5.313-1.394a9.96 9.96 0 0 0 4.765 1.213h.004c5.514 0 9.997-4.483 9.997-9.997 0-2.67-1.04-5.18-2.929-7.069a9.93 9.93 0 0 0-7.072-2.943zm5.865 15.858a8.29 8.29 0 0 1-5.865 2.43h-.003a8.28 8.28 0 0 1-4.223-1.156l-.303-.18-3.153.827.842-3.073-.198-.316a8.267 8.267 0 0 1-1.268-4.396c0-4.582 3.729-8.311 8.315-8.311a8.26 8.26 0 0 1 5.878 2.437 8.26 8.26 0 0 1 2.432 5.878 8.29 8.29 0 0 1-2.454 5.86z"/>
-  </svg>
-</a>
 
 <script src="script.js"></script>
 </body>
